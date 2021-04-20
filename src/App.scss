@@ -1,0 +1,75 @@
+$textColor: #333;
+$backgroundColor: rgba(192, 192, 192, 0.1);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    background-color: $backgroundColor;
+}
+
+#root {
+    background-color: $backgroundColor;
+}
+
+#mainBlock {
+    height: auto;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    border: 1px solid black;
+    box-shadow: 2px 4px 5px 0px grey;
+    background-color: $backgroundColor;
+
+    .signUp {
+        font-size: 27px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .wideLine {
+        width: 100%;
+        border: 1px solid rgb(105, 105, 105);
+        margin-top: 0px;
+    }
+
+    .labelForm {
+        color: $textColor;
+        font-size: 24px;
+    }
+
+    .errorMessage {
+        color: #c03442;
+    }
+
+    .inputForm {
+        height: 34px;
+        width: 70%;
+        border: 1px solid grey;
+        border-radius: 3px;
+        box-shadow: 0px 2px 10px 0px grey;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        font-size: 20px;
+        letter-spacing: 1px;
+
+        &:hover {
+            box-shadow: 2px 3px 10px 0px grey;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    #submitBtn {
+        width: 70%;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        box-shadow: 0px 2px 10px 0px grey;
+    }
+}
